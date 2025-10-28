@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFE53D012EB0E3C800A3B796 /* EmotionClassifierApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE53D002EB0E3C800A3B796 /* EmotionClassifierApp.swift */; };
+		BFE53D032EB0E3C800A3B796 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE53D022EB0E3C800A3B796 /* ContentView.swift */; };
+		BFE53D052EB0E3C900A3B796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE53D042EB0E3C900A3B796 /* Assets.xcassets */; };
+		BFE53D082EB0E3C900A3B796 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE53D072EB0E3C900A3B796 /* Preview Assets.xcassets */; };
+		BFE53D192EB0E53800A3B796 /* EmotionModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE53D182EB0E53800A3B796 /* EmotionModelManager.swift */; };
+		BFE53D1B2EB0E56500A3B796 /* EmotionClassifierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE53D1A2EB0E56500A3B796 /* EmotionClassifierViewModel.swift */; };
+		BFE53D1D2EB0E58F00A3B796 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE53D1C2EB0E58F00A3B796 /* Emotion.swift */; };
+		BFE53D1F2EB0E5D900A3B796 /* EmotionClassifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE53D1E2EB0E5D900A3B796 /* EmotionClassifierView.swift */; };
+		BFE53D222EB0FAB500A3B796 /* EmotionClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BFE53D212EB0FAB500A3B796 /* EmotionClassifier.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BFE53CFD2EB0E3C800A3B796 /* EmotionClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE53D002EB0E3C800A3B796 /* EmotionClassifierApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionClassifierApp.swift; sourceTree = "<group>"; };
+		BFE53D022EB0E3C800A3B796 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BFE53D042EB0E3C900A3B796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFE53D072EB0E3C900A3B796 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BFE53D182EB0E53800A3B796 /* EmotionModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionModelManager.swift; sourceTree = "<group>"; };
+		BFE53D1A2EB0E56500A3B796 /* EmotionClassifierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionClassifierViewModel.swift; sourceTree = "<group>"; };
+		BFE53D1C2EB0E58F00A3B796 /* Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
+		BFE53D1E2EB0E5D900A3B796 /* EmotionClassifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionClassifierView.swift; sourceTree = "<group>"; };
+		BFE53D212EB0FAB500A3B796 /* EmotionClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = EmotionClassifier.mlmodel; path = Convertor/EmotionClassifier.mlmodel; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFE53CFA2EB0E3C800A3B796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFE53CF42EB0E3C800A3B796 = {
+			isa = PBXGroup;
+			children = (
+				BFE53CFF2EB0E3C800A3B796 /* EmotionClassifier */,
+				BFE53CFE2EB0E3C800A3B796 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFE53CFE2EB0E3C800A3B796 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFE53CFD2EB0E3C800A3B796 /* EmotionClassifier.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFE53CFF2EB0E3C800A3B796 /* EmotionClassifier */ = {
+			isa = PBXGroup;
+			children = (
+				BFE53D132EB0E41F00A3B796 /* Resources */,
+				BFE53D142EB0E43000A3B796 /* App */,
+				BFE53D062EB0E3C900A3B796 /* Preview Content */,
+			);
+			path = EmotionClassifier;
+			sourceTree = "<group>";
+		};
+		BFE53D062EB0E3C900A3B796 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BFE53D072EB0E3C900A3B796 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFE53D132EB0E41F00A3B796 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFE53D212EB0FAB500A3B796 /* EmotionClassifier.mlmodel */,
+				BFE53D042EB0E3C900A3B796 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BFE53D142EB0E43000A3B796 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BFE53D172EB0E52900A3B796 /* EmotionClassification */,
+				BFE53D202EB0E5E900A3B796 /* Main */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BFE53D172EB0E52900A3B796 /* EmotionClassification */ = {
+			isa = PBXGroup;
+			children = (
+				BFE53D1C2EB0E58F00A3B796 /* Emotion.swift */,
+				BFE53D182EB0E53800A3B796 /* EmotionModelManager.swift */,
+				BFE53D1A2EB0E56500A3B796 /* EmotionClassifierViewModel.swift */,
+				BFE53D1E2EB0E5D900A3B796 /* EmotionClassifierView.swift */,
+			);
+			path = EmotionClassification;
+			sourceTree = "<group>";
+		};
+		BFE53D202EB0E5E900A3B796 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BFE53D002EB0E3C800A3B796 /* EmotionClassifierApp.swift */,
+				BFE53D022EB0E3C800A3B796 /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFE53CFC2EB0E3C800A3B796 /* EmotionClassifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE53D102EB0E3C900A3B796 /* Build configuration list for PBXNativeTarget "EmotionClassifier" */;
+			buildPhases = (
+				BFE53CF92EB0E3C800A3B796 /* Sources */,
+				BFE53CFA2EB0E3C800A3B796 /* Frameworks */,
+				BFE53CFB2EB0E3C800A3B796 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmotionClassifier;
+			productName = EmotionClassifier;
+			productReference = BFE53CFD2EB0E3C800A3B796 /* EmotionClassifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFE53CF52EB0E3C800A3B796 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					BFE53CFC2EB0E3C800A3B796 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = BFE53CF82EB0E3C800A3B796 /* Build configuration list for PBXProject "EmotionClassifier" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFE53CF42EB0E3C800A3B796;
+			productRefGroup = BFE53CFE2EB0E3C800A3B796 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFE53CFC2EB0E3C800A3B796 /* EmotionClassifier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFE53CFB2EB0E3C800A3B796 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE53D082EB0E3C900A3B796 /* Preview Assets.xcassets in Resources */,
+				BFE53D052EB0E3C900A3B796 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFE53CF92EB0E3C800A3B796 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE53D1F2EB0E5D900A3B796 /* EmotionClassifierView.swift in Sources */,
+				BFE53D032EB0E3C800A3B796 /* ContentView.swift in Sources */,
+				BFE53D012EB0E3C800A3B796 /* EmotionClassifierApp.swift in Sources */,
+				BFE53D1B2EB0E56500A3B796 /* EmotionClassifierViewModel.swift in Sources */,
+				BFE53D192EB0E53800A3B796 /* EmotionModelManager.swift in Sources */,
+				BFE53D1D2EB0E58F00A3B796 /* Emotion.swift in Sources */,
+				BFE53D222EB0FAB500A3B796 /* EmotionClassifier.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BFE53D0E2EB0E3C900A3B796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFE53D0F2EB0E3C900A3B796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFE53D112EB0E3C900A3B796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EmotionClassifier/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.EmotionClassifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFE53D122EB0E3C900A3B796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EmotionClassifier/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.EmotionClassifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFE53CF82EB0E3C800A3B796 /* Build configuration list for PBXProject "EmotionClassifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE53D0E2EB0E3C900A3B796 /* Debug */,
+				BFE53D0F2EB0E3C900A3B796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE53D102EB0E3C900A3B796 /* Build configuration list for PBXNativeTarget "EmotionClassifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE53D112EB0E3C900A3B796 /* Debug */,
+				BFE53D122EB0E3C900A3B796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFE53CF52EB0E3C800A3B796 /* Project object */;
+}

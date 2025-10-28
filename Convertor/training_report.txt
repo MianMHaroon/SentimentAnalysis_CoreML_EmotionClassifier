@@ -1,0 +1,26 @@
+Emotion Classification Report
+----------------------------------
+Training Accuracy: 0.9817
+Validation Accuracy: 0.8978
+
+Classification Report:
+              precision    recall  f1-score   support
+
+       anger      0.889     0.873     0.881       432
+        fear      0.869     0.889     0.879       387
+         joy      0.901     0.927     0.914      1072
+        love      0.804     0.785     0.795       261
+     sadness      0.937     0.929     0.933       933
+    surprise      0.887     0.748     0.811       115
+
+    accuracy                          0.898      3200
+   macro avg      0.881     0.859     0.869      3200
+weighted avg      0.898     0.898     0.897      3200
+
+Confusion Matrix:
+[[377   7  21   3  24   0]
+ [ 11 344   9   2  14   7]
+ [ 18   3 994  39  15   3]
+ [  2   1  50 205   3   0]
+ [ 16  19  24   6 867   1]
+ [  0  22   5   0   2  86]]
