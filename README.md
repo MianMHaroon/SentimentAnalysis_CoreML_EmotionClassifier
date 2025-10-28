@@ -8,6 +8,9 @@ The **CoreML model** was converted from a **Scikit-learn pipeline** using **core
 * `DictVectorizer` for feature extraction
 * `LinearSVC` for classification
 
+![WhatsApp Image 2025-10-28 at 8 17 33 PM (4)](https://github.com/user-attachments/assets/dbb7ede8-a229-4cfe-9a94-1a3873fcbd92)
+
+
 ---
 
 ## Dataset
