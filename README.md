@@ -8,7 +8,9 @@ The **CoreML model** was converted from a **Scikit-learn pipeline** using **core
 * `DictVectorizer` for feature extraction
 * `LinearSVC` for classification
 
-![WhatsApp Image 2025-10-28 at 8 17 33 PM (4)](https://github.com/user-attachments/assets/dbb7ede8-a229-4cfe-9a94-1a3873fcbd92)
+<p align="center">
+ <img src="https://github.com/user-attachments/assets/dbb7ede8-a229-4cfe-9a94-1a3873fcbd92" width="400" alt="Emotion Classifier Demo" />
+</p>
 
 
 ---
@@ -260,6 +262,30 @@ weights_surprise = [wow=2, expect=1, shocked=1, ...]
 weights_sadness  = [sad=3, lonely=1, ...]
 ```
 
+
+## Final Weights Table (Word → Emotion)
+
+| Word      | Joy | Sadness | Anger | Love | Fear | Surprise |
+| --------- | --- | ------- | ----- | ---- | ---- | -------- |
+| happy     | 2   | -1      | -1    | -0.5 | -0.5 | -0.5     |
+| today     | 1   | -0.5    | -0.5  | -0.2 | -0.2 | -0.2     |
+| sad       | -1  | 3       | -1    | -0.5 | -0.5 | -0.5     |
+| angry     | -1  | -1      | 3     | -0.5 | -0.5 | -0.5     |
+| love      | -0.5| -0.5    | -0.5  | 3    | -0.5 | -0.5     |
+| scared    | -0.5| -0.5    | -0.5  | -0.5 | 2    | -0.5     |
+| wow       | -0.5| -0.5    | -0.5  | -0.5 | -0.5 | 2        |
+| expect    | -0.5| -0.5    | -0.5  | -0.5 | -0.5 | 1        |
+| ecstatic  | 1   | -0.5    | -0.5  | -0.5 | -0.5 | -0.5     |
+| joyful    | 1   | -0.5    | -0.5  | -0.5 | -0.5 | -0.5     |
+| upset     | -0.5| -0.5    | 2     | -0.5 | -0.5 | -0.5     |
+| family    | -0.5| -0.5    | -0.5  | 1    | -0.5 | -0.5     |
+| friends   | -0.5| -0.5    | -0.5  | 1    | -0.5 | -0.5     |
+| anxious   | -0.5| -0.5    | -0.5  | -0.5 | 1    | -0.5     |
+| shocked   | -0.5| -0.5    | -0.5  | -0.5 | -0.5 | 1        |
+| lonely    | -0.5| 1       | -0.5  | -0.5 | -0.5 | -0.5     |
+
+> **Note:** Positive values indicate the strength of association between a word and an emotion. Negative values reduce association with other emotions. This table is used for predicting emotions of new sentences.
+
 ---
 
 ## Step 4: Prediction Formula
@@ -270,30 +296,33 @@ When a new sentence comes in, the model computes:
 score_emotion = sum(word_count * weight_for_that_emotion)
 ```
 
-## Example Prediction with Iterations
+### Example: Emotion Prediction for a Sentence
 
-Input:
+Sentence: "I feel so happy and excited today!"
 
-```
-I feel so happy and excited today!
-```
+Steps:
 
-**Processing steps:**
+1. Tokenize
+   ['i', 'feel', 'so', 'happy', 'and', 'excited', 'today']
 
-1. Tokenize: `['i', 'feel', 'so', 'happy', 'and', 'excited', 'today']`
-2. Remove stopwords: `['happy', 'excited', 'today']`
-3. Feature dictionary: `{'happy':1, 'excited':1, 'today':1}`
+2. Remove stopwords
+   ['happy', 'excited', 'today']
 
-**Compute `score_emotion` for each class:**
+3. Create feature dictionary
+   {'happy': 1, 'excited': 1, 'today': 1}
 
-* joy: 2(happy)+1(excited)+1(today) = 4 → joy score = 4
-* sadness: -1 + -0.5 + -0.5 = -2
-* anger: -1 + -0.5 + -0.5 = -2
-* love: -0.5 + -0.2 + -0.2 = -0.9
-* fear: -0.5 + -0.2 + -0.2 = -0.9
-* surprise: -0.5 + -0.2 + -0.2 = -0.9
+4. Compute `score_emotion` for each class
 
-**Predicted emotion → joy** ✅
+| Emotion  | Score Calculation                         | Score |
+| -------- | ----------------------------------------- | ----- |
+| Joy      | 2(happy) + 1(excited) + 1(today)          | 4     |
+| Sadness  | -1(happy) + -0.5(excited) + -0.5(today)   | -2    |
+| Anger    | -1(happy) + -0.5(excited) + -0.5(today)   | -2    |
+| Love     | -0.5(happy) + -0.5(excited) + -0.5(today) | -1.5  |
+| Fear     | -0.5(happy) + -0.5(excited) + -0.5(today) | -1.5  |
+| Surprise | -0.5(happy) + -0.5(excited) + -0.5(today) | -1.5  |
+
+Predicted Emotion: Joy (highest score = 4)
 
 ---
 
